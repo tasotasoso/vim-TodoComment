@@ -20,5 +20,5 @@ endfunction
 
 function! TodoComment() abort
     let commentchr = GetCommentChr()
-    InsertComment(a:commentchr)
+    echo InsertComment(commentchr)
 endfunction
