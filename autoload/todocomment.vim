@@ -1,9 +1,9 @@
 function! GetCommentChr() abort
     let ext = expand("%:e")
 
-    if ext == "py" || ext == "rb" || ext == "js" || ext == "sh" 
+    if ext == "py" || ext == "rb" || ext == "js" || ext == "sh"
         return "#"
-    elseif ext == "java" || ext == "go"
+    elseif ext == "java" || ext == "go" || ext == "cpp"
         return "//"
     else
 	return '"'
