@@ -18,7 +18,7 @@ function! InsertComment(commentchr) abort
     execute ":normal o" . a:commentchr . referenceurl
 endfunction
 
-function! TodoComment() abort
+function! todocomment#TodoComment() abort
     let commentchr = GetCommentChr()
     echo InsertComment(commentchr)
 endfunction
